@@ -1,0 +1,11 @@
+Flask Learning Notes:
+
+To install virtual enviroment: # allows all packages to be kept seperate for different projects
+    py -m venv testenv          # testenv is the name of the virtual enviroment
+
+
+To activate the enviroment:
+    testenv\Scripts\activate
+
+
+    
