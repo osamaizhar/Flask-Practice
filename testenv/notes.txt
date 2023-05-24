@@ -8,4 +8,32 @@ To activate the enviroment:
     testenv\Scripts\activate
 
 
+Set enviroment variable: # this step allows flask to know what file to look for when it needs to run 
+    set FLASK_APP=app.py   
+    # later when you run flask server then no need to mention name of module
+
+To Exit virtual enviroment:
+    deactivate
+
+if __name__=="__main__": # with this the file can run directly without flask run command
+    app.run() 
+
+If file name is something other than app then:
+    export FLASK_APP=<name_of_file>.py
+    flask run
+
+To use Debug mode: 
+    export FLASK_DEBUG=1
+    flask run
+
+To install with pipenv which has both pip and virtualenv:
+    1. first install pipenv:
+        pip install pipenv
+    
+    2. Install flask:
+        pipenv install flask
+    
+    3. Once install run:
+        pipenv shell # this will start virtualenv  with the name of the folder that you are in
+
     
